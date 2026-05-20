@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AR | Rumah Adat Indonesia</title>
+
+    <!-- assets -->
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
-<body>   
-    <p>Hello world!</p>
+
+<body class="bg-[#4E2012]">
+    <!-- splashscreen -->
+    <div id="splash-screen" class="fixed inset-0 flex flex-col items-center justify-center opacity-100 transition-opacity duration-500 gap-2">
+        <p class="items-center text-center text-white text-2xl font-dancing">
+            Anjungan Virtual
+        </p>
+        <h1 class="items-center text-center text-white text-5xl font-dancing">
+            Rumah Adat Indonesia
+        </h1>
+    </div>
+
+    <!-- homepage -->
+    <main id="homepage" class="opacity-0 min-h-screen flex flex-col items-center justify-center px-8 transition-opacity duration-500">
+        <div class="flex flex-col items-center lg:gap-10">
+            <p class="text-center text-white text-2xl lg:text-3xl font-dm-serif max-w-lg">
+                Rumah adat bukan sekadar bangunan, tapi penuh makna budaya.
+            </p>
+            <div
+                class="outline-2 outline-white rounded-full text-white font-dm-serif py-3 px-10 lg:px-18 text-center absolute bottom-10 lg:relative lg:bottom-0">
+                <i class="fas fa-arrow-right"></i>
+                &ensp;Telusuri Sekarang
+            </div>
+        </div>
+    </main>
+
+
+    <script src="assets/script.js"></script>
 </body>
+
 </html>

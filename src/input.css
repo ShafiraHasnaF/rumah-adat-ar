@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-dancing: "Dancing Script", cursive;
+  --font-dm-serif: "DM Serif Display", serif;
+}
