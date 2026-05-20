@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda | Rumah Adat Indonesia</title>
+
+    <!-- assets -->
+    <link href="../src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body class="bg-[#4E2012] p-9.5 md:max-w-3xl mx-auto">
+    <img src="/assets/img/indonesia.png" alt="Indonesia"
+        class="absolute inset-0 w-full md:inset-0 md:w-full md:top-10 md:object-contain items-center object-cover opacity-20 md:opacity-15 -z-10 top-4">
+
+    <!-- header -->
+    <section class="flex flex-col text-left text-white">
+        <i class="fa-regular fa-map text-4xl mb-5 md:text-5xl"></i>
+        <h1 class="font-dm-serif text-2xl md:text-3xl">Selamat Datang!</h1>
+        <p class="font-dm-serif text-xl md:text-2xl">Jelajahi rumah adat Indonesia</p>
+    </section>
+
+    <!-- searchbar -->
+    <section class="max-w-full mt-6 shadow-md bg-white rounded-full flex flex-row items-center justify-between py-1 pr-1 pl-6">
+        <input type="text" placeholder="Cari rumah adat..."
+            class="w-full bg-transparent border-none outline-none text-gray-600 font-poppins text-xs placeholder-gray-500">
+        <button class="bg-[#271310] rounded-full px-3 py-1.5 hover:bg-[#3a1f18] transition-colors duration-200">
+            <i class="fa-solid fa-magnifying-glass text-white text-sm"></i>
+        </button>
+    </section>
+
+    <!-- arcamera -->
+    <section class="mt-6">
+        <div
+            class="relative rounded-lg outline-1 overflow-hidden outline-white text-white w-full h-35 md:h-50 md:rounded-xl flex flex-col items-center justify-center">
+            <img src="/assets/img/bg-homescreen-section.jpg" alt="Fitur AR"
+                class="absolute w-full items-center object-cover overflow-hidden -z-2">
+            <div class="absolute inset-0 bg-linear-to-b from-black/80 via-black/40 to-transparent -z-1"></div>
+
+            <p class="font-dm-serif text-xl">Scan Rumah Adat dalam AR</p>
+            <p class="font-poppins text-xs font-bold">Lihat budaya secara interaktif</p>
+
+            <div class="bg-yellow-500 rounded-lg text-black text-xs flex flex-row items-center justify-center py-2 px-16 mt-6 cursor-pointer hover:bg-yellow-600 transition-colors duration-200"
+                onclick="window.location.href='/section/ar-camera.html'">
+                <i class="fa-solid fa-camera mr-2 text-xs"></i>
+                Buka Kamera AR
+            </div>
+        </div>
+    </section>
+
+    <!-- fitler pulau -->
+    <section class="flex gap-6 overflow-x-auto pb-4 font-poppins text-xs md:text-sm mt-6 md:justify-center md:mt-10">
+        <button class="filter-btn active px-6 py-1.5 rounded-t-2xl bg-white text-[#4E2012] font-bold transition-all duration-300">
+            Semua
+        </button>
+        <button class="filter-btn text-white font-bold py-1.5 border-b-4 border-white transition-all duration-300">
+            Jawa
+        </button>
+        <button class="filter-btn text-white font-bold py-1.5 border-b-4 border-white transition-all duration-300">
+            Sulawesi
+        </button>
+        <button class="filter-btn text-white font-bold py-1.5 border-b-4 border-white transition-all duration-300">
+            Sumatra
+        </button>
+    </section>
+
+    <!-- grid rmh adat -->
+    <section class="mt-1">
+        <div class="grid grid-cols-2 gap-6">
+            <!-- tongkonan -->
+            <div class="relative px-2 rounded-lg bg-white w-full min-h-45 md:min-h-59 flex flex-col items-center cursor-pointer hover:shadow-md hover:shadow-black/70 hover:scale-102 hover:bg-gray-200 transition-all duration-200"
+                onclick="window.location.href='/section/rumahadat/tongkonan.html'">
+                <img src="/assets/img/tongkonan.png" alt="Rumah Adat Tongkonan"
+                    class="w-full h-32 md:min-h-42 items-center object-cover overflow-hidden m-2 rounded-lg">
+                <p class="font-dm-serif text-sm md:text-lg text-[#271310] pl-1.5 -mt-1 mr-auto">Tongkonan</p>
+                <span class="font-poppins font-light text-[10px] md:text-sm text-gray-800 pl-1.5 -mt-0.5 mr-auto">Sulawesi
+                    Selatan</span>
+            </div>
+
+            <!-- baduy -->
+            <div class="relative px-2 rounded-lg bg-white w-full min-h-45 md:min-h-59 flex flex-col items-center cursor-pointer hover:shadow-md hover:shadow-black/70 hover:scale-102 hover:bg-gray-200 transition-all duration-200"
+                onclick="window.location.href='/section/rumahadat/baduy.html'">
+                <img src="/assets/img/baduy.png" alt="Rumah Adat Baduy"
+                    class="w-full h-32 md:min-h-42 items-center object-cover overflow-hidden m-2 rounded-lg">
+                <p class="font-dm-serif text-sm md:text-lg text-[#271310] pl-1.5 -mt-1 mr-auto">Baduy</p>
+                <span class="font-poppins font-light text-[10px] md:text-sm text-gray-800 pl-1.5 -mt-0.5 mr-auto">Jawa Barat</span>
+            </div>
+
+            <!-- krongbade -->
+            <div class="relative px-2 rounded-lg bg-white w-full min-h-45 md:min-h-59 flex flex-col items-center cursor-pointer hover:shadow-md hover:shadow-black/70 hover:scale-102 hover:bg-gray-200 transition-all duration-200"
+                onclick="window.location.href='/section/rumahadat/krongbade.html'">
+                <img src="/assets/img/krongbade.png" alt="Rumah Adat Krong Bade"
+                    class="w-full h-32 md:min-h-42 items-center object-cover overflow-hidden m-2 rounded-lg">
+                <p class="font-dm-serif text-sm md:text-lg text-[#271310] pl-1.5 -mt-1 mr-auto">Krong Bade</p>
+                <span class="font-poppins font-light text-[10px] md:text-sm text-gray-800 pl-1.5 -mt-0.5 mr-auto">Aceh</span>
+            </div>
+
+            <!-- woratworat -->
+            <div class="relative px-2 rounded-lg bg-white w-full min-h-45 md:min-h-59 flex flex-col items-center cursor-pointer hover:shadow-md hover:shadow-black/70 hover:scale-102 hover:bg-gray-200 transition-all duration-200"
+                onclick="window.location.href='/section/rumahadat/woratworat.html'">
+                <img src="/assets/img/woratworat.png" alt="Rumah Adat Worat-Worat"
+                    class="w-full h-32 md:min-h-42 items-center object-cover overflow-hidden m-2 rounded-lg">
+                <p class="font-dm-serif text-sm md:text-lg text-[#271310] pl-1.5 -mt-1 mr-auto">Worat-Worat</p>
+                <span class="font-poppins font-light text-[10px] md:text-sm text-gray-800 pl-1.5 -mt-0.5 mr-auto">Maluku</span>
+            </div>
+
+            <!-- lakatuil -->
+            <div class="relative px-2 rounded-lg bg-white w-full min-h-45 md:min-h-59 flex flex-col items-center cursor-pointer hover:shadow-md hover:shadow-black/70 hover:scale-102 hover:bg-gray-200 transition-all duration-200"
+                onclick="window.location.href='/section/rumahadat/lakatuil.html'">
+                <img src="/assets/img/lakatuil.png" alt="Rumah Adat Lakatuil"
+                    class="w-full h-32 md:min-h-42 items-center object-cover overflow-hidden m-2 rounded-lg">
+                <p class="font-dm-serif text-sm md:text-lg text-[#271310] pl-1.5 -mt-1 mr-auto">Lakatuil</p>
+                <span class="font-poppins font-light text-[10px] md:text-sm text-gray-800 pl-1.5 -mt-0.5 mr-auto">Alor</span>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/script.js"></script>
+</body>
+
+<footer>
+    <hr class="border-white border-2 w-full mt-8">
+    <div class="text-center text-white mt-3 text-xs font-poppins">
+        &copy; 2026 Kelompok 2 AR/VR | IK 1D
+    </div>
+</footer>
+
+</html>
