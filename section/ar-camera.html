@@ -1,0 +1,134 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link href="/src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+
+    <title>AR Rumah Adat</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            width: 100vw;
+            height: 100vh;
+            height: 100dvh;
+        }
+
+        a-scene {
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            height: 100dvh !important;
+        }
+
+        video {
+            object-fit: cover !important;
+            width: 100% !important;
+            height: 100% !important;
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+        }
+
+        .popup {
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(0px);
+            transition: 0.3s ease;
+        }
+
+        .popup.show {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+    </style>
+</head>
+
+<body class="font-dm-serif">
+    <!--btn kembali -->
+    <div class="fixed top-4 left-4 z-100" onclick="history.back(); console.log('tes clickef')">
+        <i class="fa-solid fa-chevron-left text-white text-2xl p-3 cursor-pointer"></i>
+    </div>
+
+    <!-- guide -->
+    <section class="fixed top-5 left-0 right-0 z-50 flex justify-center px-4">
+        <p
+            class="text-[12px] md:text-base px-8 py-2 font-dm-serif bg-white/80 backdrop-blur-sm rounded-full text-[#4E2012] max-w-max text-center">
+            Arahkan kamera ke kartu rumah adat
+        </p>
+    </section>
+
+    <!-- popoup -->
+    <div class="popup fixed bottom-0 left-1/2 -translate-x-1/2 bg-white backdrop-blur-[10px] text-white px-4 py-2 rounded-t-3xl z-999 w-full sm:w-[80%] md:w-[60%] lg:w-[50%] md:mt-1.5 shadow-lg"
+        id="popup">
+        <h2 id="popup-title"
+            class="w-max text-lg text-center sm:text-xl md:text-2xl m-0 font-dm-serif text-[#271310] mx-auto"></h2>
+        <p id="popup-region"
+            class="w-max text-xs sm:text-sm md:text-base opacity-80 font-poppins text-[#232121] mx-auto"></p>
+        <button id="detail-btn"
+            class="w-full text-[#FFD188] mt-3 mb-2 py-3 border-none rounded-full bg-[#4E2012] font-bold cursor-pointer text-sm sm:text-base hover:bg-amber-900 transition-colors duration-100 font-poppins md:w-[90%] mx-auto flex items-center justify-center">
+            <i class="fa-solid fa-book-open mr-2"></i>
+            Lihat Filosofi
+        </button>
+    </div>
+
+    <a-scene mindar-image="
+        imageTargetSrc: /assets/img/target/targets.mind;
+        filterMinCF: 0.001;
+        filterBeta: 0.01;
+        warmupTolerance: 5;
+        missTolerance: 10;
+    " color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
+        device-orientation-permission-ui="enabled: false" embedded>
+
+        <a-assets>
+            <a-asset-item id="tongkonan-model" src="/assets/img/target/3d_tongkonan.glb"></a-asset-item>
+            <a-asset-item id="baduy-model" src="/assets/img/target/3d_baduy.glb"></a-asset-item>
+            <a-asset-item id="krongbade-model" src="/assets/img/target/3d_krongbade.glb"></a-asset-item>
+            <a-asset-item id="woratworat-model" src="/assets/img/target/3d_woratworat.glb"></a-asset-item>
+            <a-asset-item id="lakatuil-model" src="/assets/img/target/3d_lakatuil.glb"></a-asset-item>
+        </a-assets>
+        <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+        <!-- tongkonam -->
+        <a-entity id="tongkonan-target" mindar-image-target="targetIndex: 0">
+            <a-gltf-model src="#tongkonan-model" position="0 -0.25 0" scale="0.5 0.5 0.5" rotation="0 0 0">
+            </a-gltf-model>
+        </a-entity>
+
+        <!-- baduy -->
+        <a-entity id="baduy-target" mindar-image-target="targetIndex: 2">
+            <a-gltf-model src="#baduy-model" position="0 -0.25 0" scale="1.5 1.5 1.5" rotation="0 0 0"></a-gltf-model>
+        </a-entity>
+
+        <!-- krongbade -->
+        <a-entity id="krongbade-target" mindar-image-target="targetIndex: 1">
+            <a-gltf-model src="#krongbade-model" position="0 -0.25 0" scale="0.2 0.2 0.2"
+                rotation="0 0 0"></a-gltf-model>
+        </a-entity>
+
+        <!-- woratworat -->
+        <a-entity id="woratworat-target" mindar-image-target="targetIndex: 4">
+            <a-gltf-model src="#woratworat-model" position="0 -0.25 0" scale="0.2 0.2 0.2"
+                rotation="0 0 0"></a-gltf-model>
+        </a-entity>
+
+        <!-- lakatuik -->
+        <a-entity id="lakatuil-target" mindar-image-target="targetIndex: 3">
+            <a-gltf-model src="#lakatuil-model" position="0 -0.25 0" scale="0.1 0.1 0.1"
+                rotation="0 0 0"></a-gltf-model>
+        </a-entity>
+    </a-scene>
+
+    <script src="/assets/script.js"></script>
+</body>
+
+</html>

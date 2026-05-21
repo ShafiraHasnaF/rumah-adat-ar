@@ -31,6 +31,109 @@ document.addEventListener("DOMContentLoaded", () => {
             );
         });
     });
+
+    //kamera ar
+    const params = new URLSearchParams(window.location.search);
+    const selectedHouse = params.get("house");
+
+    const popup = document.getElementById("popup");
+    const popupTitle = document.getElementById("popup-title");
+    const popupRegion = document.getElementById("popup-region");
+    const detailBtn = document.getElementById("detail-btn");
+    const rmhAdat = [
+        {
+            id: "#tongkonan-target",
+            name: "tongkonan",
+            title: "Rumah Adat Tongkonan",
+            region: "Asal : Sulawesi Selatan",
+            url: "/section/rumahadat/tongkonan.html"
+        },
+        {
+            id: "#baduy-target",
+            name: "baduy",
+            title: "Rumah Adat Baduy",
+            region: "Asal : Jawa Barat",
+            url: "/section/rumahadat/baduy.html"
+        },
+        {
+            id: "#krongbade-target",
+            name: "krongbade",
+            title: "Rumah Adat Krongbade",
+            region: "Asal : Aceh",
+            url: "/section/rumahadat/krongbade.html"
+        },
+        {
+            id: "#woratworat-target",
+            name: "woratworat",
+            title: "Rumah Adat Woratworat",
+            region: "Asal : Maluku",
+            url: "/section/rumahadat/woratworat.html"
+        },
+        {
+            id: "#lakatuil-target",
+            name: "lakatuil",
+            title: "Rumah Adat Lakatuil",
+            region: "Asal : Alor",
+            url: "/section/rumahadat/lakatuil.html"
+        },
+    ];
+
+    rmhAdat.forEach((house) => {
+        const target = document.querySelector(house.id);
+        if (!target) return;
+        target.addEventListener("targetFound", () => {
+            if (selectedHouse) {
+                if (selectedHouse !== house.name) {
+                    console.log("rumah tdk match");
+                    return;
+                }
+            }
+            console.log(`${house.title} detected`);
+            popup.classList.add("show");
+            popupTitle.textContent = house.title;
+            popupRegion.textContent = house.region;
+            detailBtn.onclick = () => {
+                console.log(`klik detail ${house.name}`);
+                window.location.href = `${house.url}`;
+            };
+        });
+        target.addEventListener("targetLost", () => {
+            popup.classList.remove("show");
+        });
+    });
+
+    // suara dikte
+    const voiceBtn = document.getElementById("voice-btn");
+    if (voiceBtn) {
+        // const audioSrc = voiceBtn.dataset.audio;
+        // const audio = new Audio(audioSrc);
+        const audioSrc = voiceBtn.dataset.audio;
+        console.log(audioSrc);
+        const audio = new Audio(audioSrc);
+        audio.addEventListener("error", () => {
+            console.log("audio gagal load");
+        });
+        let isPlaying = false;
+        voiceBtn.addEventListener("click", () => {
+            if (!isPlaying) {
+                audio.play();
+                isPlaying = true;
+                voiceBtn.innerHTML = `<i class="fa-solid fa-volume-xmark text-3xl"></i>`;
+                console.log("audio play");
+            }
+            else {
+                audio.pause();
+                audio.currentTime = 0;
+                isPlaying = false;
+                voiceBtn.innerHTML = `<i class="fa-solid fa-volume-up text-3xl"></i>`;
+                console.log("audio stop");
+            }
+        });
+        audio.addEventListener("ended", () => {
+            isPlaying = false;
+            voiceBtn.innerHTML = `<i class="fa-solid fa-volume-up text-3xl"></i>`;
+        });
+    }
 })
 
 function splashScreen() {

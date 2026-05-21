@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baduy</title>
+
+    <!-- assets -->
+    <link href="/src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body class="bg-[#4E2012] md:max-w-3xl mx-auto md:pt-10">
+    <img src="/assets/img/indonesia.png" alt="Indonesia"
+        class="absolute inset-0 w-full md:inset-0 md:w-full md:top-10 md:object-contain items-center object-cover opacity-20 md:opacity-15 -z-10 top-75">
+
+    <div class="relative w-full min-h-80 md:min-h-0 md:h-70 md:w-[90%] md:mx-auto md:pb-0 pb-8">
+        <div class="absolute top-3 left-3 z-10">
+            <i class="fa-solid fa-chevron-left text-white text-xl ml-4 mt-4" onclick="history.back()"></i>
+        </div>
+        <div class="absolute bottom-10 left-0 right-0 z-10 md:pb-0 pb-6 px-9.5 font-dm-serif">
+            <p class="bg-[#4E2012] max-w-max text-xs text-[#FFD188] py-1 px-5 rounded-full mb-1">Jawa Barat</p>
+            <h1 class="text-2xl text-white text-left">Rumah Adat Baduy</h1>
+        </div>
+        <div id="voice-btn" data-audio="/assets/voices/v_baduy.mp3" class="absolute bg-[#FFD188] rounded-lg top-8 right-26 p-2 z-100">
+            <i class="fa-solid fa-volume-up text-3xl"></i>
+        </div>
+        <div class="absolute bg-[#FFD188] rounded-lg top-8 right-8 p-2 z-100" onclick="window.location.href='../ar-camera.html'">
+            <i class="fa-regular fa-camera text-3xl"></i>
+        </div>
+        <div
+            class="md:block hidden absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-transparent z-1 rounded-lg">
+        </div>
+        <img src="/assets/img/baduy.png" alt="Rumah Adat Baduy" class="w-full h-full object-cover md:rounded-lg">
+    </div>
+
+    <!-- tulisanny -->
+    <main class="px-9.5 pb-10 md:pt-8 text-white font-poppins">
+        <p class="text-xs text-justify">
+            Rumah Adat Badui berasal dari masyarakat Badui di Banten dan mencerminkan filosofi hidup sederhana, harmonis
+            dengan alam, serta memegang teguh adat leluhur. Rumah ini bukan hanya tempat tinggal, tetapi juga simbol
+            keseimbangan antara manusia, alam, dan spiritualitas masyarakat Badui.
+        </p>
+
+        <h4 class="text-lg font-bold mt-5 text-[#FFD188]">Filosofi</h4>
+        <ul class="list-disc pl-4 text-xs mt-2 space-y-1">
+            <li>Dibangun mengikuti kontur alam tanpa merusak lingkungan</li>
+            <li>Menggunakan bahan alami seperti bambu, kayu, dan ijuk</li>
+            <li>Melambangkan kesederhanaan, kebersamaan, dan kehidupan yang selaras dengan alam</li>
+            <li>Rumah dibuat tanpa paku sebagai simbol menjaga kemurnian tradisi leluhur</li>
+        </ul>
+
+        <h4 class="text-lg font-bold mt-5 text-[#FFD188]">Simbol dan Ornamen</h4>
+        <ul class="list-disc pl-4 text-xs mt-2 space-y-1">
+            <li>Desain rumah sederhana tanpa banyak hiasan sebagai simbol kerendahan hati</li>
+            <li>Atap ijuk melambangkan perlindungan dan kedekatan dengan alam</li>
+            <li>Rumah panggung mencerminkan adaptasi terhadap lingkungan pegunungan</li>
+            <li>Warna dominan:
+                <ul class="list-disc space-y-1 pt-1 pl-5">
+                    <li>Cokelat → kesederhanaan & alam</li>
+                    <li>Hitam → keteguhan adat</li>
+                    <li>Putih → kesucian & kejujuran</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h4 class="text-lg font-bold mt-5 text-[#FFD188]">Jenis Baduy</h4>
+        <ul class="list-disc pl-4 text-xs mt-2 space-y-1">
+            <li>Baduy Dalam → rumah masyarakat yang sangat menjaga adat tradisional</li>
+            <li>Baduy Luar → rumah masyarakat yang mulai menerima pengaruh luar</li>
+        </ul>
+
+        <h4 class="text-lg font-bold mt-5 text-[#FFD188]">Struktur Ruang (Filosofi Ruangan)</h4>
+        <ul class="list-disc pl-4 text-xs mt-2 space-y-1">
+            <li>Sosoro → teras untuk menerima tamu</li>
+            <li>Tepas → ruang berkumpul keluarga</li>
+            <li>Imah → ruang utama/tempat tinggal keluarga</li>
+            <li>Goah → tempat menyimpan hasil panen dan perlengkapan adat</li>
+        </ul>
+    </main>
+
+    <script src="/assets/script.js"></script>
+</body>
+<footer>
+    <hr class="border-white border mx-9.5">
+    <div class="text-center text-white mt-3 text-xs font-poppins my-8">
+        &copy; 2026 Kelompok 2 AR/VR | IK 1D
+    </div>
+</footer>
+
+</html>

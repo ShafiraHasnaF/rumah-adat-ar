@@ -12,10 +12,10 @@
 </head>
 
 <body class="bg-[#4E2012] md:max-w-3xl mx-auto md:pt-10">
-    <!-- <img src="/assets/img/indonesia.png" alt="Indonesia"
-        class="absolute inset-0 w-full md:inset-0 md:w-full md:top-10 md:object-contain items-center object-cover opacity-20 md:opacity-15 -z-10 top-4"> -->
+    <img src="/assets/img/indonesia.png" alt="Indonesia"
+        class="absolute inset-0 w-full md:inset-0 md:w-full md:top-10 md:object-contain items-center object-cover opacity-20 md:opacity-15 -z-10 top-75">
 
-    <div class="relative w-full min-h-80 md:min-h-0 md:h-70 md:w-[90%] md:mx-auto md:pb-0">
+    <div class="relative w-full min-h-80 md:min-h-0 md:h-70 md:w-[90%] md:mx-auto md:pb-0 pb-8">
         <div class="absolute top-3 left-3 z-10">
             <i class="fa-solid fa-chevron-left text-white text-xl ml-4 mt-4" onclick="history.back()"></i>
         </div>
@@ -23,9 +23,15 @@
             <p class="bg-[#4E2012] max-w-max text-xs text-[#FFD188] py-1 px-5 rounded-full mb-1">Sulawesi Selatan</p>
             <h1 class="text-2xl text-white text-left">Rumah Adat Tongkonan</h1>
         </div>
-        <div class="absolute bg-[#FFD188] rounded-lg top-8 right-8 p-2">
+
+        <div id="voice-btn" data-audio="/assets/voices/v_tongkonan.mp3" class="absolute bg-[#FFD188] rounded-lg top-8 right-26 p-2 z-100">
+            <i class="fa-solid fa-volume-up text-3xl"></i>
+        </div>
+        <!-- btn cam -->
+        <div class="absolute bg-[#FFD188] rounded-lg top-8 right-8 p-2 z-100" onclick="window.location.href='../ar-camera.html'">
             <i class="fa-regular fa-camera text-3xl"></i>
         </div>
+
         <div class="md:block hidden absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-transparent z-1 rounded-lg"></div>
         <img src="/assets/img/tongkonan.png" alt="Rumah Adat Tongkonan" class="w-full h-full object-cover md:rounded-lg">
     </div>
@@ -74,6 +80,8 @@
             <li>Banua Patang Lanta → 4 ruang (fungsi adat, keluarga, tamu, penyimpanan)</li>
         </ul>
     </main>
+
+    <script src="/assets/script.js"></script>
 </body>
 <footer>
     <hr class="border-white border mx-9.5">
