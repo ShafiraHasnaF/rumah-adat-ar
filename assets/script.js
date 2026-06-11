@@ -91,35 +91,35 @@ document.addEventListener("DOMContentLoaded", () => {
             name: "tongkonan",
             title: "Rumah Adat Tongkonan",
             region: "Asal : Sulawesi Selatan",
-            url: "/section/rumahadat/tongkonan.html"
+            url: "../rumahadat/tongkonan.html"
         },
         {
             id: "#baduy-target",
             name: "baduy",
             title: "Rumah Adat Baduy",
             region: "Asal : Jawa Barat",
-            url: "/section/rumahadat/baduy.html"
+            url: "../rumahadat/baduy.html"
         },
         {
             id: "#krongbade-target",
             name: "krongbade",
             title: "Rumah Adat Krongbade",
             region: "Asal : Aceh",
-            url: "/section/rumahadat/krongbade.html"
+            url: "../rumahadat/krongbade.html"
         },
         {
             id: "#woratworat-target",
             name: "woratworat",
             title: "Rumah Adat Woratworat",
             region: "Asal : Maluku",
-            url: "/section/rumahadat/woratworat.html"
+            url: "../rumahadat/woratworat.html"
         },
         {
             id: "#lakatuil-target",
             name: "lakatuil",
             title: "Rumah Adat Lakatuil",
             region: "Asal : Alor",
-            url: "/section/rumahadat/lakatuil.html"
+            url: "../rumahadat/lakatuil.html"
         },
     ];
 
