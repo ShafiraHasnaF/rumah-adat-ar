@@ -8,7 +8,7 @@ Anjungan Virtual Rumah Adat Indonesia adalah platform edukasi interaktif berbasi
 
 Untuk mencoba langsung platform ini atau membaca panduan lengkapnya, silakan klik tautan di bawah ini:
 
-| <a href="https://shafirahasnaf.github.io/rumah-adat-ar/"><img src="https://img.shields.io/badge/Google_Chrome-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white" /></a> | <a href="https://drive.google.com/file/d/1ZGvDhRn3TBAO5OTJGS2GR7CIJXbygx6I/view?usp=sharing"><img src="https://img.shields.io/badge/Google_Drive-34A853?style=for-the-badge&logo=google-drive&logoColor=white" /></a> |
+| [![Live Website](https://skillicons.dev/icons?i=chrome)](https://shafirahasnaf.github.io/rumah-adat-ar/) | [![Manual Book](https://skillicons.dev/icons?i=gdrive)](https://drive.google.com/file/d/1ZGvDhRn3TBAO5OTJGS2GR7CIJXbygx6I/view?usp=sharing) |
 | :---: | :---: |
 | **[Link Website](https://shafirahasnaf.github.io/rumah-adat-ar/)** <br> <sub>(Live Demo WebAR)</sub> | **[Buku Panduan](https://drive.google.com/file/d/1ZGvDhRn3TBAO5OTJGS2GR7CIJXbygx6I/view?usp=sharing)** <br> <sub>(Google Drive PDF)</sub> |
 
