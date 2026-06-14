@@ -43,14 +43,14 @@ Karena website ini merender grafis 3D secara langsung, perangkat Anda harus mend
 
 ## 🛠️ Tech Stack & Alat yang Digunakan
 
-* **Core Web:** HTML5 & JavaScript (ES6+)<br>[![HTML](https://skillicons.dev/icons?i=html)](https://skillicons.dev) [![JS](https://skillicons.dev/icons?i=js)](https://skillicons.dev)
-* **Styling Framework:** Tailwind CSS<br>[![Tailwind](https://skillicons.dev/icons?i=tailwind)](https://skillicons.dev)
+* **Core Web:** HTML5 & JavaScript (ES6+) &nbsp;&nbsp; [![HTML](https://skillicons.dev/icons?i=html)](https://skillicons.dev) [![JS](https://skillicons.dev/icons?i=js)](https://skillicons.dev)
+* **Styling Framework:** Tailwind CSS &nbsp;&nbsp; [![Tailwind](https://skillicons.dev/icons?i=tailwind)](https://skillicons.dev)
 * **AR Engine:** MindAR (Image Tracking)
 * **Voice Over Generator:** ElevenLabs AI
-* **Design & Prototyping:** Figma<br>[![Figma](https://skillicons.dev/icons?i=figma)](https://skillicons.dev)
+* **Design & Prototyping:** Figma &nbsp;&nbsp; [![Figma](https://skillicons.dev/icons?i=figma)](https://skillicons.dev)
 * **3D Models Repository:** Sketchfab
-* **Code Editor:** Visual Studio Code<br>[![VSCode](https://skillicons.dev/icons?i=vscode)](https://skillicons.dev)
-* **Version Control & Hosting:** GitHub & GitHub Pages<br>[![GitHub](https://skillicons.dev/icons?i=github)](https://skillicons.dev)
+* **Code Editor:** Visual Studio Code &nbsp;&nbsp; [![VSCode](https://skillicons.dev/icons?i=vscode)](https://skillicons.dev)
+* **Version Control & Hosting:** GitHub & GitHub Pages &nbsp;&nbsp; [![GitHub](https://skillicons.dev/icons?i=github)](https://skillicons.dev)
 
 ---
 
