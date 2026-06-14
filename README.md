@@ -43,18 +43,18 @@ Karena website ini merender grafis 3D secara langsung, perangkat Anda harus mend
 ## 🛠️ Tech Stack & Alat yang Digunakan
 
 * **Core Web:** HTML5 & JavaScript (ES6+)  
-  [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML) [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+  [![HTML](https://skillicons.dev/icons?i=html)](https://skillicons.dev) [![JS](https://skillicons.dev/icons?i=js)](https://skillicons.dev)
 * **Styling Framework:** Tailwind CSS  
-  [![CSS - Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
-* **AR Engine:** MindAR (Image Tracking)  
-  [![Framework - MindAR](https://img.shields.io/badge/MindAR-blue?style=flat-square&logo=javascript&logoColor=white)](https://github.com/hiukim/mind-ar-js)
-* **Voice Over Generator:** ElevenLabs AI  
-  [![AI - ElevenLabs](https://img.shields.io/badge/ElevenLabs-orange?style=flat-square)](https://elevenlabs.io/)
+  [![Tailwind](https://skillicons.dev/icons?i=tailwind)](https://skillicons.dev)
+* **AR Engine:** MindAR (Image Tracking)
+* **Voice Over Generator:** ElevenLabs AI
 * **Design & Prototyping:** Figma  
-  [![Design - Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)](https://www.figma.com/)
+  [![Figma](https://skillicons.dev/icons?i=figma)](https://skillicons.dev)
 * **3D Models Repository:** Sketchfab
-* **Code Editor:** Visual Studio Code
-* **Version Control & Hosting:** GitHub & GitHub Pages
+* **Code Editor:** Visual Studio Code  
+  [![VSCode](https://skillicons.dev/icons?i=vscode)](https://skillicons.dev)
+* **Version Control & Hosting:** GitHub & GitHub Pages  
+  [![GitHub](https://skillicons.dev/icons?i=github)](https://skillicons.dev)
 
 ---
 
