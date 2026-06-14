@@ -47,7 +47,7 @@ Karena website ini merender grafis 3D secara langsung, perangkat Anda harus mend
 * **Styling Framework:** Tailwind CSS<br><br>[![Tailwind](https://skillicons.dev/icons?i=tailwind)](https://skillicons.dev)<br><br>
 * **AR Engine:** MindAR (Image Tracking)
 * **Voice Over Generator:** ElevenLabs AI
-* **Design & Prototyping:** Figma<br><br>[![Figma](https://skillicons.dev/icons?i=figma)](https://skillicons.dev)<br><br><br>
+* **Design & Prototyping:** Figma<br><br>[![Figma](https://skillicons.dev/icons?i=figma)](https://skillicons.dev)<br><br>
 * **3D Models Repository:** Sketchfab
 * **Code Editor:** Visual Studio Code<br><br>[![VSCode](https://skillicons.dev/icons?i=vscode)](https://skillicons.dev)<br><br>
 * **Version Control & Hosting:** GitHub & GitHub Pages<br><br>[![GitHub](https://skillicons.dev/icons?i=github)](https://skillicons.dev)
