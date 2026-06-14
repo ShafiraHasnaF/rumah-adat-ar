@@ -8,28 +8,9 @@ Anjungan Virtual Rumah Adat Indonesia adalah platform edukasi interaktif berbasi
 
 Untuk mencoba langsung platform ini atau membaca panduan lengkapnya, silakan klik tautan di bawah ini:
 
-<table border="0" cellpadding="10" cellspacing="0">
-  <tr>
-    <td align="center" valign="top" width="150">
-      <a href="https://shafirahasnaf.github.io/rumah-adat-ar/">
-        <img src="https://skillicons.dev/icons?i=chrome" width="64" alt="Live Website" />
-      </a>
-      <br />
-      <strong><a href="https://shafirahasnaf.github.io/rumah-adat-ar/">Link Website</a></strong>
-      <br />
-      <sub>(Live Demo WebAR)</sub>
-    </td>
-    <td align="center" valign="top" width="150">
-      <a href="https://drive.google.com/file/d/1ZGvDhRn3TBAO5OTJGS2GR7CIJXbygx6I/view?usp=sharing">
-        <img src="https://skillicons.dev/icons?i=gdrive" width="64" alt="Manual Book" />
-      </a>
-      <br />
-      <strong><a href="https://drive.google.com/file/d/1ZGvDhRn3TBAO5OTJGS2GR7CIJXbygx6I/view?usp=sharing">Buku Panduan</a></strong>
-      <br />
-      <sub>(Google Drive PDF)</sub>
-    </td>
-  </tr>
-</table>
+| <a href="https://shafirahasnaf.github.io/rumah-adat-ar/"><img src="https://img.shields.io/badge/Google_Chrome-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white" /></a> | <a href="https://drive.google.com/file/d/1ZGvDhRn3TBAO5OTJGS2GR7CIJXbygx6I/view?usp=sharing"><img src="https://img.shields.io/badge/Google_Drive-34A853?style=for-the-badge&logo=google-drive&logoColor=white" /></a> |
+| :---: | :---: |
+| **[Link Website](https://shafirahasnaf.github.io/rumah-adat-ar/)** <br> <sub>(Live Demo WebAR)</sub> | **[Buku Panduan](https://drive.google.com/file/d/1ZGvDhRn3TBAO5OTJGS2GR7CIJXbygx6I/view?usp=sharing)** <br> <sub>(Google Drive PDF)</sub> |
 
 ---
 
